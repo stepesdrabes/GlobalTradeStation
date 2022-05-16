@@ -1,0 +1,21 @@
+name: GlobalTradeStation
+version: '${project.version}'
+main: cz.stepes.globaltradestation.Main
+authors: [ Stepes ]
+description: Global trading station
+depend: [ Vault ]
+commands:
+  gtsreload:
+    description: Reloads plugin's configuration
+    permission: globaltradestation.reload
+  gts:
+    description: Opens Global Trade Station
+    aliases: [ globaltradestation ]
+    permission: globaltradestation.gts
+permissions:
+  globaltradestation.reload:
+    default: op
+  globaltradestation.gts:
+    default: true
+  globaltradestation.trade:
+    default: true

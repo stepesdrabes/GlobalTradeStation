@@ -1,0 +1,60 @@
+messages:
+  prefix: "&c&lGTS &8»"
+  notPlayer: "&4You are not a player!"
+  wrongUsage: "&4Wrong command usage! Use: &l%usage%"
+  configReloaded: "&bPlugin's configuration &7&o(config.yml) &bhas been successfully reloaded"
+  invalidPrice: "&4'&l%price%&4' is invalid price! Use whole positive numbers only!"
+  invalidAmount: "&4'&l%amount%&4' is invalid amount! Use whole positive numbers only!"
+  holdItem: "&4Hold an item in your hand you want to sell!"
+  blacklistedItem: "&4You can't sell this item, because it is blacklisted!"
+  tradeCreated: "&bYou have successfully created a trade of &l%amount%x %itemName% &bfor &e&l$%price%"
+
+  guis:
+    tradeLoreAddition:
+      - ""
+      - "&7Price: &e%price%"
+      - "&7Time left: &e%timeLeft%"
+      - "&7Seller: &e%sellerName%"
+    ownTradeLoreAddition:
+      - ""
+      - "&cThis is your own trade"
+      - "&c&lRight-click to cancel"
+
+    listings:
+      title: "&c&lGTS » &7Listings"
+      yourListings:
+        name: "&bYour listings"
+        lore:
+          - ""
+          - "&bHere you can see all"
+          - "&bitems you are currently"
+          - "&bselling in GTS"
+      orderBy:
+        name: "&eOrder by &6&l%ordering%"
+        newest: "NEWEST"
+        oldest: "OLDEST"
+        highestPrice: "HIGHEST PRICE"
+        lowestPrice: "LOWEST PRICE"
+      howToSell:
+        name: "&aHow to sell"
+        lore:
+          - ""
+          - ""
+          - ""
+      aboutPage:
+        name: "&6About page"
+        lore:
+          - ""
+          - ""
+
+sounds:
+  error: "ENTITY_ITEM_BREAK"
+  success: "ENTITY_PLAYER_LEVELUP"
+
+defaultMaxPlayersTrade: 3 # Maximum trades player can have
+tradeExpiration: 10080 # In minutes, 10080 minutes = 7 days
+
+# List of items players can't sell
+blackList:
+  - BEDROCK
+  - DRAGON_EGG
